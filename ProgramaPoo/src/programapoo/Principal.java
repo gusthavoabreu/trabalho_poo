@@ -32,7 +32,7 @@ public class Principal extends javax.swing.JFrame {
 
         desktop = new javax.swing.JDesktopPane();
         jLabel1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        buttonVerHorario = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
@@ -54,10 +54,10 @@ public class Principal extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel1.setText("Horário ");
 
-        jButton1.setText("Ver horario");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        buttonVerHorario.setText("Ver horario");
+        buttonVerHorario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                buttonVerHorarioActionPerformed(evt);
             }
         });
 
@@ -81,7 +81,7 @@ public class Principal extends javax.swing.JFrame {
                     .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, 142, Short.MAX_VALUE)
                     .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(buttonVerHorario, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton5, javax.swing.GroupLayout.Alignment.TRAILING))
                 .addGap(18, 18, 18)
                 .addComponent(desktop))
@@ -94,7 +94,7 @@ public class Principal extends javax.swing.JFrame {
                 .addGap(6, 6, 6)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton1)
+                        .addComponent(buttonVerHorario)
                         .addGap(6, 6, 6)
                         .addComponent(jButton2)
                         .addGap(6, 6, 6)
@@ -109,12 +109,13 @@ public class Principal extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-         VerHorario horario = new VerHorario();
-         add(desktop);
-         horario.setVisible(true);
+    private void buttonVerHorarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonVerHorarioActionPerformed
+         VerHorario Horario = new VerHorario();
+         desktop.add(Horario);
+         Horario.setVisible(true);
+         Horario.setClosable(true);
          //teste
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_buttonVerHorarioActionPerformed
 
     /**
      * @param args the command line arguments
@@ -152,8 +153,8 @@ public class Principal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton buttonVerHorario;
     private javax.swing.JDesktopPane desktop;
-    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
