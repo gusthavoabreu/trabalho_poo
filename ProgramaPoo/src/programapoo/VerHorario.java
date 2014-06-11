@@ -6,6 +6,9 @@
 
 package programapoo;
 
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Marcello
@@ -42,7 +45,8 @@ public class VerHorario extends javax.swing.JInternalFrame {
         escolhePeriodo = new java.awt.Choice();
         escolhePredio = new java.awt.Choice();
         tituloVerHorario = new javax.swing.JLabel();
-        buttonConfirmaOpcoes = new javax.swing.JButton();
+        buttonConfirma = new javax.swing.JButton();
+        buttonCancela = new javax.swing.JButton();
 
         jRadioButtonMenuItem1.setSelected(true);
         jRadioButtonMenuItem1.setText("jRadioButtonMenuItem1");
@@ -73,10 +77,20 @@ public class VerHorario extends javax.swing.JInternalFrame {
         tituloVerHorario.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         tituloVerHorario.setText("Escolha as opções corretas");
 
-        buttonConfirmaOpcoes.setText("OK");
-        buttonConfirmaOpcoes.addActionListener(new java.awt.event.ActionListener() {
+        buttonConfirma.setText("OK");
+        buttonConfirma.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buttonConfirmaOpcoesActionPerformed(evt);
+                buttonConfirmaActionPerformed(evt);
+            }
+        });
+
+        buttonCancela.setText("Cancelar");
+        buttonCancela.setMaximumSize(new java.awt.Dimension(47, 23));
+        buttonCancela.setMinimumSize(new java.awt.Dimension(47, 23));
+        buttonCancela.setPreferredSize(new java.awt.Dimension(47, 23));
+        buttonCancela.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonCancelaActionPerformed(evt);
             }
         });
 
@@ -89,18 +103,24 @@ public class VerHorario extends javax.swing.JInternalFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel4)
-                            .addComponent(escolhePeriodo, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel5)
-                            .addComponent(escolhePredio, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(tituloVerHorario))
-                .addContainerGap(51, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(buttonConfirmaOpcoes)
-                .addContainerGap())
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel4)
+                                    .addComponent(escolhePeriodo, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel5)
+                                    .addComponent(escolhePredio, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(0, 10, Short.MAX_VALUE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addComponent(buttonConfirma)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(buttonCancela, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(12, 12, 12))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(tituloVerHorario)
+                        .addContainerGap())))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -117,17 +137,23 @@ public class VerHorario extends javax.swing.JInternalFrame {
                         .addGroup(layout.createSequentialGroup()
                             .addGap(14, 14, 14)
                             .addComponent(escolhePredio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 15, Short.MAX_VALUE)
-                .addComponent(buttonConfirmaOpcoes, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(27, 27, 27))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(buttonConfirma, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(buttonCancela, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(32, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void buttonConfirmaOpcoesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonConfirmaOpcoesActionPerformed
+    private void buttonConfirmaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonConfirmaActionPerformed
         
-    }//GEN-LAST:event_buttonConfirmaOpcoesActionPerformed
+    }//GEN-LAST:event_buttonConfirmaActionPerformed
+
+    private void buttonCancelaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonCancelaActionPerformed
+            
+    }//GEN-LAST:event_buttonCancelaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -157,7 +183,8 @@ public class VerHorario extends javax.swing.JInternalFrame {
         //</editor-fold>
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton buttonConfirmaOpcoes;
+    private javax.swing.JButton buttonCancela;
+    private javax.swing.JButton buttonConfirma;
     private java.awt.Choice escolhePeriodo;
     private java.awt.Choice escolhePredio;
     private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem1;
