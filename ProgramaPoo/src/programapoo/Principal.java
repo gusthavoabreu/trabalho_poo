@@ -113,6 +113,7 @@ public class Principal extends javax.swing.JFrame {
          VerHorario horario = new VerHorario();
          add(desktop);
          horario.setVisible(true);
+         //teste
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
