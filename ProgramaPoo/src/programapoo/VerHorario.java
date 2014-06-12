@@ -72,10 +72,10 @@ public class VerHorario extends javax.swing.JInternalFrame {
 
         jLabel4.setText("Escolha seu periodo");
 
-        jLabel5.setText("Escolha seu pr��dio");
+        jLabel5.setText("Escolha seu prédio");
 
         tituloVerHorario.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        tituloVerHorario.setText("Escolha as op����es corretas");
+        tituloVerHorario.setText("Escolha as opções corretas");
 
         buttonConfirma.setText("OK");
         buttonConfirma.addActionListener(new java.awt.event.ActionListener() {
