@@ -72,10 +72,10 @@ public class VerHorario extends javax.swing.JInternalFrame {
 
         jLabel4.setText("Escolha seu periodo");
 
-        jLabel5.setText("Escolha seu prédio");
+        jLabel5.setText("Escolha seu pr��dio");
 
         tituloVerHorario.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        tituloVerHorario.setText("Escolha as opções corretas");
+        tituloVerHorario.setText("Escolha as op����es corretas");
 
         buttonConfirma.setText("OK");
         buttonConfirma.addActionListener(new java.awt.event.ActionListener() {
@@ -180,6 +180,7 @@ public class VerHorario extends javax.swing.JInternalFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(VerHorario.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+    }
         //</editor-fold>
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
